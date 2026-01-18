@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Política de Seguridad - Administración Online</title>
+    <meta name="description" content="Política de seguridad de Administración Online. Conoce cómo protegemos tu información y datos personales.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/02_isotipo_AO.png" alt="Administración Online Isotipo" class="logo-isotipo">
+                            <img src="images/03_logotipo_texto.png" alt="Administración Online" class="logo-texto">
+                        </a>
+                    </div>
+
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="nav-link" data-i18n="nav.inicio">Inicio</a></li>
+                            <li><a href="index.html#nosotros" class="nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+                            <li><a href="index.html#servicios" class="nav-link" data-i18n="nav.servicios">Servicios</a></li>
+                            <li><a href="index.html#logistica" class="nav-link" data-i18n="nav.administracion">La Administración</a></li>
+                            <li><a href="index.html#como-trabajamos" class="nav-link" data-i18n="nav.comoTrabajamos">Cómo trabajamos</a></li>
+                            <li><a href="index.html#contacto" class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <div class="search-box">
+                            <button class="search-btn" id="searchBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div class="search-form" id="searchForm">
+                                <input type="text" placeholder="Buscar..." class="search-input" data-i18n="search.placeholder" data-i18n-attr="placeholder">
+                                <button class="search-close" id="searchClose">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Language Selector -->
+                        <div class="language-selector">
+                            <button class="lang-btn" id="langBtn">
+                                <img src="images/flag-es.svg" alt="ES" class="lang-flag" id="currentLangFlag">
+                                <span id="currentLangText">ES</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="lang-dropdown" id="langDropdown">
+                                <a href="#" data-lang="es" class="lang-option active">
+                                    <img src="images/flag-es.svg" alt="Español"> Español
+                                </a>
+                                <a href="#" data-lang="en" class="lang-option">
+                                    <img src="images/flag-en.svg" alt="English"> English
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="mobile-toggle" id="mobileToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <span class="breadcrumb-current">Política de Seguridad</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Content -->
+    <section class="legal-section">
+        <div class="container">
+            <div class="legal-content">
+                <h1 class="legal-title">Política de Seguridad</h1>
+
+                <p class="legal-intro">En Administración Online, la seguridad de tu información es una prioridad fundamental. Nos esforzamos por proteger tus datos mediante un enfoque integral que combina medidas técnicas avanzadas, procedimientos administrativos estrictos y salvaguardas físicas robustas. Nuestro objetivo es garantizar la confidencialidad, integridad y disponibilidad de tu información frente a accesos no autorizados, pérdidas, alteraciones o divulgaciones indebidas. A continuación, te detallamos nuestras prácticas de seguridad de manera exhaustiva:</p>
+
+                <h2>1. Encriptación de Datos</h2>
+                <ul>
+                    <li>Implementamos encriptación AES-256 para proteger tus datos tanto en tránsito como en reposo, asegurando que solo las partes autorizadas puedan acceder a ellos.</li>
+                    <li>Todas las comunicaciones entre tu dispositivo y nuestros servidores están protegidas mediante protocolos SSL/TLS de última generación, lo que garantiza una transmisión segura.</li>
+                </ul>
+
+                <h2>2. Autenticación y Control de Acceso</h2>
+                <ul>
+                    <li>Ofrecemos autenticación de dos factores (2FA) opcional, que incluye métodos como códigos enviados por SMS o aplicaciones de autenticación, para añadir una capa adicional de seguridad a tu cuenta.</li>
+                    <li>Exigimos políticas de contraseñas robustas, como una longitud mínima de 12 caracteres y combinaciones de letras, números y símbolos.</li>
+                    <li>El acceso a los datos está estrictamente limitado al personal autorizado, con roles y permisos definidos mediante un sistema de control de acceso basado en el principio de 'privilegio mínimo'.</li>
+                    <li>Cada intento de acceso es registrado en un sistema de auditoría interno para garantizar la trazabilidad.</li>
+                </ul>
+
+                <h2>3. Copias de Seguridad y Recuperación ante Desastres</h2>
+                <ul>
+                    <li>Realizamos copias de seguridad diarias automatizadas de todos los datos críticos, almacenadas en servidores redundantes y encriptados.</li>
+                    <li>Contamos con un plan de recuperación ante desastres que asegura la restauración rápida y segura de los datos en caso de fallos técnicos, ataques cibernéticos o desastres naturales.</li>
+                    <li>Las copias de seguridad se almacenan en ubicaciones geográficamente separadas para minimizar riesgos.</li>
+                </ul>
+
+                <h2>4. Protección contra Amenazas</h2>
+                <ul>
+                    <li>Utilizamos firewalls de próxima generación, sistemas de detección de intrusos (IDS) y sistemas de prevención de intrusos (IPS) para proteger nuestra infraestructura de red.</li>
+                    <li>Escaneamos regularmente nuestros sistemas en busca de vulnerabilidades utilizando herramientas automatizadas y pruebas de penetración realizadas por expertos externos.</li>
+                    <li>Aplicamos actualizaciones y parches de seguridad en tiempo récord para mitigar riesgos asociados con vulnerabilidades conocidas.</li>
+                </ul>
+
+                <h2>5. Auditorías y Monitoreo Continuo</h2>
+                <ul>
+                    <li>Realizamos auditorías internas trimestrales y auditorías externas anuales llevadas a cabo por firmas independientes especializadas en ciberseguridad.</li>
+                    <li>Monitoreamos nuestros sistemas 24/7 mediante herramientas avanzadas que detectan y responden a actividades sospechosas en tiempo real, como intentos de inicio de sesión no autorizados o picos inusuales de tráfico.</li>
+                </ul>
+
+                <h2>6. Manejo de Incidentes de Seguridad</h2>
+                <ul>
+                    <li>Contamos con un plan de respuesta a incidentes bien definido, que incluye la identificación, contención, mitigación y notificación de cualquier brecha de seguridad.</li>
+                    <li>En caso de un incidente, notificaremos a los usuarios afectados dentro de las 72 horas siguientes a la detección, conforme a las normativas aplicables.</li>
+                    <li>Nuestro equipo de seguridad, disponible 24/7, está capacitado para reaccionar rápidamente y minimizar el impacto de cualquier problema.</li>
+                </ul>
+
+                <h2>7. Cumplimiento Normativo</h2>
+                <ul>
+                    <li>Nos adherimos a regulaciones internacionales de protección de datos, incluyendo el Reglamento General de Protección de Datos (RGPD) en la Unión Europea y otras leyes locales aplicables.</li>
+                    <li>Trabajamos para cumplir con las mejores prácticas de seguridad de la información.</li>
+                </ul>
+
+                <h2>8. Capacitación y Concienciación del Personal</h2>
+                <ul>
+                    <li>Todo nuestro personal, incluidos empleados y contratistas, recibe capacitación obligatoria anual sobre seguridad de la información, manejo de datos y respuesta a incidentes.</li>
+                    <li>Realizamos simulacros periódicos de phishing y otros ataques para mantener a nuestro equipo preparado frente a amenazas emergentes.</li>
+                </ul>
+
+                <h2>9. Infraestructura Física</h2>
+                <ul>
+                    <li>Nuestros centros de datos están ubicados en instalaciones certificadas con controles de acceso biométricos, vigilancia 24/7 y protección contra desastres naturales como incendios o inundaciones.</li>
+                </ul>
+
+                <p class="legal-closing">Estamos comprometidos a mantener los más altos estándares de seguridad y a evolucionar nuestras prácticas para enfrentar las amenazas emergentes, protegiendo así tu confianza y tus datos.</p>
+
+                <p class="legal-contact">Para cualquier duda o solicitud relacionada con esta política, contáctanos en <a href="mailto:info@administraciononline.com">info@administraciononline.com</a>.</p>
+            </div>
+
+            <!-- Back Button -->
+            <div class="back-button-container">
+                <a href="index.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/02_isotipo_AO.png" alt="Administración Online Isotipo" class="footer-logo-isotipo">
+                        <img src="images/03_logotipo_texto.png" alt="Administración Online" class="footer-logo-texto">
+                    </div>
+                    <p class="footer-desc">Trámites y gestiones con la administración para particulares y empresas.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Manantial 13, Planta 1, Oficina 163, Edificio CEEI - 11500 El Puerto de Santa María, Cádiz</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+34722198901">+34 722 198 901</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/34722198901" target="_blank">+34 722 198 901</a></li>
+                        <li><i class="fas fa-envelope"></i> info@administraciononline.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="politica-seguridad.html">Política de Seguridad</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 DOYR CAPITAL S.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

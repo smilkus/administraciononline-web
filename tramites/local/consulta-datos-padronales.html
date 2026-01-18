@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Consulta de Datos Padronales en Sede Electrónica en Cádiz | Guía 2026</title>
+    <meta name="description" content="Guía completa para consultar y descargar tus datos padronales en la sede electrónica de tu ayuntamiento en la provincia de Cádiz. Cómo ver tu empadronamiento online.">
+    <meta name="keywords" content="consulta padrón online Cádiz, ver datos padrón internet, descargar volante empadronamiento, sede electrónica padrón, consultar empadronamiento Jerez">
+
+    <!-- Open Graph / SEO Social -->
+    <meta property="og:title" content="Consulta de Datos Padronales en Sede Electrónica en Cádiz | Guía Completa 2026">
+    <meta property="og:description" content="Todo lo que necesitas saber para consultar y descargar tus datos padronales por internet en la provincia de Cádiz.">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://administraciononline.com/tramites/local/consulta-datos-padronales.html">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Guía para la Consulta de Datos Padronales en Sede Electrónica en la Provincia de Cádiz",
+        "author": {
+            "@type": "Person",
+            "name": "Gustavo del Olmo"
+        },
+        "datePublished": "2026-01-17",
+        "dateModified": "2026-01-17",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Administración Online"
+        },
+        "description": "Guía completa para consultar y descargar tus datos padronales por internet en la provincia de Cádiz."
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Puedo ver mis datos del padrón por internet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, a través de la sede electrónica de tu ayuntamiento (si ofrece el servicio) o mediante la consulta del INE para ver la última inscripción."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Necesito certificado digital para consultar el padrón online?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Normalmente sí. La mayoría de ayuntamientos exigen identificación digital: certificado digital, DNIe o Cl@ve."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo ver los datos de toda mi familia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Normalmente solo puedes ver tus propios datos por privacidad. Para datos de convivientes necesitarías un certificado colectivo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿La consulta online tiene validez oficial?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Si puedes descargar un volante o certificado con código de verificación, suele tener validez. Pero si te exigen documento con firma y sello oficial, puede que necesites el certificado formal."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <img src="../../images/02_isotipo_AO.png" alt="Administración Online Isotipo" class="logo-isotipo">
+                            <img src="../../images/03_logotipo_texto.png" alt="Administración Online" class="logo-texto">
+                        </a>
+                    </div>
+
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="../../index.html" class="nav-link">Inicio</a></li>
+                            <li><a href="../../index.html#nosotros" class="nav-link">Nosotros</a></li>
+                            <li><a href="../../index.html#servicios" class="nav-link">Servicios</a></li>
+                            <li><a href="../../index.html#logistica" class="nav-link active">La Administración</a></li>
+                            <li><a href="../../index.html#como-trabajamos" class="nav-link">Cómo trabajamos</a></li>
+                            <li><a href="../../index.html#contacto" class="nav-link">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <div class="search-box">
+                            <button class="search-btn" id="searchBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div class="search-form" id="searchForm">
+                                <input type="text" placeholder="Buscar..." class="search-input">
+                                <button class="search-close" id="searchClose">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button class="mobile-toggle" id="mobileToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <a href="../../index.html#logistica">La Administración</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <a href="../../administracion-local.html">Administración Local</a>
+                <span class="breadcrumb-separator"><i class="fas fa-chevron-right"></i></span>
+                <span class="breadcrumb-current">Consulta de Datos Padronales Online</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Guía para la Consulta de Datos Padronales en Sede Electrónica</h1>
+            <p class="page-subtitle">Cómo ver y descargar tu información padronal por internet</p>
+            <p class="article-meta"><i class="fas fa-user"></i> Gustavo del Olmo · <i class="fas fa-calendar-alt"></i> Actualizado en enero de 2026</p>
+        </div>
+    </section>
+
+    <!-- Tramite Content -->
+    <section class="tramite-detail-section">
+        <div class="container">
+            <div class="tramite-detail-content">
+
+                <!-- Índice de contenidos -->
+                <nav class="table-of-contents">
+                    <h2><i class="fas fa-list"></i> Índice de contenidos</h2>
+                    <ul>
+                        <li><a href="#que-es">Qué puedes consultar</a></li>
+                        <li><a href="#dos-caminos">Los dos caminos típicos</a></li>
+                        <li><a href="#que-necesitas">Qué necesitas para consultar online</a></li>
+                        <li><a href="#que-ves">Qué ves y qué no ves</a></li>
+                        <li><a href="#si-hay-error">Si detectas un error</a></li>
+                        <li><a href="#ejemplos-cadiz">Ejemplos en la provincia de Cádiz</a></li>
+                        <li><a href="#problemas">Problemas habituales</a></li>
+                        <li><a href="#checklist">Checklist rápido</a></li>
+                        <li><a href="#ayuda">Cómo te ayudamos</a></li>
+                        <li><a href="#faq">Preguntas frecuentes</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Artículo principal -->
+                <article class="tramite-article">
+
+                    <!-- Sección: Qué es -->
+                    <section id="que-es" class="content-section">
+                        <h2><i class="fas fa-search"></i> Qué puedes consultar</h2>
+
+                        <p>A veces no quieres pedir nada. Solo quieres <strong>ver qué pone</strong>. Qué domicilio figura, desde cuándo, si estás bien escrito, si el sistema te reconoce. Lo normal.</p>
+
+                        <p>La consulta de datos padronales online te permite:</p>
+
+                        <ul class="feature-list">
+                            <li><i class="fas fa-home"></i> <strong>Ver tu domicilio</strong> registrado en el padrón</li>
+                            <li><i class="fas fa-calendar"></i> <strong>Comprobar fechas</strong> de inscripción</li>
+                            <li><i class="fas fa-spell-check"></i> <strong>Verificar que tus datos</strong> (nombre, apellidos, DNI) están correctos</li>
+                            <li><i class="fas fa-download"></i> <strong>Descargar volantes</strong> o certificados (si el ayuntamiento lo permite)</li>
+                        </ul>
+
+                        <div class="info-box highlight">
+                            <h4><i class="fas fa-info-circle"></i> Cuando funciona, es de lo mejor</h4>
+                            <p>Te ahorra colas. Cuando no funciona... al menos te avisa de que hay algo que corregir antes de que te explote en la cara.</p>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Dos caminos -->
+                    <section id="dos-caminos" class="content-section">
+                        <h2><i class="fas fa-directions"></i> Los dos caminos típicos</h2>
+
+                        <p>Para consultar tus datos padronales por internet tienes dos caminos típicos:</p>
+
+                        <div class="comparison-grid">
+                            <div class="comparison-box dr">
+                                <h3><i class="fas fa-landmark"></i> Sede electrónica de tu ayuntamiento</h3>
+                                <p>Si tu ayuntamiento ofrece:</p>
+                                <ul>
+                                    <li>"Consulta de padrón"</li>
+                                    <li>"Mis datos"</li>
+                                    <li>"Volante/certificado"</li>
+                                </ul>
+                                <p>Suele ser la opción más completa: puedes ver tus datos y a menudo descargar un documento.</p>
+                            </div>
+
+                            <div class="comparison-box cp">
+                                <h3><i class="fas fa-database"></i> Consulta vinculada al INE</h3>
+                                <p>Existe una consulta de datos padronales a nivel estatal que permite ver la última inscripción que consta.</p>
+                                <p><strong>Ojo:</strong> no es un listado de toda tu vida, suele ser lo último y de forma bastante limitada.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Qué necesitas -->
+                    <section id="que-necesitas" class="content-section">
+                        <h2><i class="fas fa-key"></i> Qué necesitas para consultar online</h2>
+
+                        <p>La mecánica es parecida en ambos casos:</p>
+
+                        <div class="doc-summary-box">
+                            <h4><i class="fas fa-id-card"></i> Identificación digital</h4>
+                            <ul>
+                                <li><strong>Certificado digital</strong> (persona física)</li>
+                                <li><strong>DNIe</strong> con lector de tarjetas</li>
+                                <li><strong>Cl@ve</strong> (permanente o PIN)</li>
+                            </ul>
+                        </div>
+
+                        <div class="doc-summary-box">
+                            <h4><i class="fas fa-laptop"></i> Acceso a la sede</h4>
+                            <p>Entrar con tu identificación digital, buscar el trámite de consulta de padrón, y acceder.</p>
+                        </div>
+
+                        <div class="info-box recomendacion">
+                            <h4><i class="fas fa-lightbulb"></i> Antes de empezar</h4>
+                            <p>Comprueba que tu certificado digital o Cl@ve funciona correctamente. El 80% de los problemas empiezan con "creía que mi certificado funcionaba".</p>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Qué ves -->
+                    <section id="que-ves" class="content-section">
+                        <h2><i class="fas fa-eye"></i> Qué ves y qué no ves</h2>
+
+                        <p>Dos cosas que conviene tener claras:</p>
+
+                        <div class="tipo-box">
+                            <h3><i class="fas fa-user"></i> Solo tus datos</h3>
+                            <p>Lo que ves normalmente son <strong>tus datos, no los de toda la gente que vive contigo</strong>. Privacidad, etc.</p>
+                            <p>Si necesitas saber quién está empadronado en tu domicilio, eso requiere un <strong>certificado colectivo o de convivencia</strong>.</p>
+                        </div>
+
+                        <div class="tipo-box">
+                            <h3><i class="fas fa-file-download"></i> Documento descargable</h3>
+                            <p>Si el sistema es amable, podrás descargar un PDF (volante/certificado o pantalla de datos). Si no es tan amable, al menos verás lo básico.</p>
+                            <p>Muchos documentos incluyen <strong>código de verificación</strong> para validarlos ante terceros.</p>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Si hay error -->
+                    <section id="si-hay-error" class="content-section">
+                        <h2><i class="fas fa-exclamation-circle"></i> Si detectas un error</h2>
+
+                        <p>Si detectas un error en tus datos, la <strong>"descarga" no lo arregla</strong>. Te toca rectificación en el padrón municipal.</p>
+
+                        <div class="info-box highlight">
+                            <h4><i class="fas fa-info-circle"></i> El sistema es literal</h4>
+                            <p>Un detalle tonto, de esos que fastidian: si tus datos de identificación no coinciden exactamente con lo que hay registrado (una letra, un orden de apellidos), a veces la consulta devuelve "nada". No significa que no existas; significa que el sistema es literal. Como un portero con mala tarde.</p>
+                        </div>
+
+                        <p>Si encuentras errores, consulta la guía de <a href="modificacion-datos-padron.html">modificación de datos personales en el padrón</a>.</p>
+                    </section>
+
+                    <!-- Sección: Ejemplos en Cádiz -->
+                    <section id="ejemplos-cadiz" class="content-section">
+                        <h2><i class="fas fa-city"></i> Ejemplos en la provincia de Cádiz</h2>
+
+                        <div class="caso-box">
+                            <h3><i class="fas fa-landmark"></i> Ayuntamiento de Cádiz</h3>
+                            <p>Disponen de consulta de datos padronales en su Portal del Ciudadano. Puedes acceder con certificado digital y obtener volantes con código de verificación.</p>
+                        </div>
+
+                        <div class="caso-box">
+                            <h3><i class="fas fa-wine-glass-alt"></i> Ayuntamiento de Jerez</h3>
+                            <p>En su sede electrónica ofrecen consulta y descarga de volante de empadronamiento. Los documentos incorporan código de verificación para validarlos.</p>
+                        </div>
+
+                        <div class="caso-box">
+                            <h3><i class="fas fa-anchor"></i> Ayuntamiento de Algeciras</h3>
+                            <p>Sede electrónica con trámites relacionados con el padrón. Consulta los servicios disponibles online según el tipo de documento que necesites.</p>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Problemas -->
+                    <section id="problemas" class="content-section">
+                        <h2><i class="fas fa-exclamation-triangle"></i> Problemas habituales</h2>
+
+                        <div class="error-box">
+                            <h4><i class="fas fa-times-circle"></i> 1) "No aparezco" o "datos no encontrados"</h4>
+                            <p><strong>Posibles causas:</strong> datos de identificación no coinciden exactamente, o hay algún error en el registro.</p>
+                            <p><strong>Solución:</strong> verifica que estás accediendo correctamente. Si persiste, consulta en el ayuntamiento.</p>
+                        </div>
+
+                        <div class="error-box">
+                            <h4><i class="fas fa-times-circle"></i> 2) El certificado digital no funciona</h4>
+                            <p><strong>Posibles causas:</strong> certificado caducado, no instalado correctamente, problema del navegador.</p>
+                            <p><strong>Solución:</strong> comprueba validez y configuración antes de empezar.</p>
+                        </div>
+
+                        <div class="error-box">
+                            <h4><i class="fas fa-times-circle"></i> 3) No puedo descargar el documento</h4>
+                            <p><strong>Posibles causas:</strong> el ayuntamiento solo permite consulta pero no descarga, o el trámite requiere solicitud formal.</p>
+                            <p><strong>Solución:</strong> busca si hay un trámite específico de "solicitud de volante/certificado".</p>
+                        </div>
+
+                        <div class="error-box">
+                            <h4><i class="fas fa-times-circle"></i> 4) Me piden documento "oficial" y solo tengo la consulta</h4>
+                            <p><strong>Problema:</strong> algunos organismos no aceptan la pantalla de datos y exigen documento con firma y sello.</p>
+                            <p><strong>Solución:</strong> solicita el certificado oficial, no el volante informativo.</p>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Checklist -->
+                    <section id="checklist" class="content-section">
+                        <h2><i class="fas fa-clipboard-check"></i> Checklist rápido</h2>
+
+                        <div class="checklist-box">
+                            <ul class="checklist">
+                                <li><span class="checkbox">☐</span> Tengo <strong>certificado digital, DNIe o Cl@ve</strong> funcionando</li>
+                                <li><span class="checkbox">☐</span> Sé <strong>en qué municipio estoy empadronado</strong></li>
+                                <li><span class="checkbox">☐</span> He localizado la <strong>sede electrónica</strong> de ese ayuntamiento</li>
+                                <li><span class="checkbox">☐</span> He encontrado el trámite de <strong>consulta de padrón</strong> o similar</li>
+                                <li><span class="checkbox">☐</span> Sé si necesito un <strong>volante informativo</strong> o un <strong>certificado oficial</strong></li>
+                                <li><span class="checkbox">☐</span> Si necesito datos de convivientes, entiendo que necesito <strong>certificado colectivo</strong></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Ayuda -->
+                    <section id="ayuda" class="content-section">
+                        <h2><i class="fas fa-hands-helping"></i> Cómo te ayudamos desde Administración Online</h2>
+
+                        <p>Si te apetece hacerlo tú, perfecto: esta guía está para eso.</p>
+
+                        <p>Y si prefieres que alguien te lo gestione (o si necesitas un documento específico y no sabes cómo pedirlo), en <strong>Administración Online</strong> podemos actuar como tus representantes y ayudarte con:</p>
+
+                        <div class="service-steps">
+                            <div class="service-step">
+                                <div class="service-icon"><i class="fas fa-search"></i></div>
+                                <p><strong>Consultar</strong> tus datos padronales y verificar que están correctos</p>
+                            </div>
+                            <div class="service-step">
+                                <div class="service-icon"><i class="fas fa-file-download"></i></div>
+                                <p><strong>Obtener</strong> el volante o certificado que necesitas</p>
+                            </div>
+                            <div class="service-step">
+                                <div class="service-icon"><i class="fas fa-edit"></i></div>
+                                <p><strong>Gestionar rectificaciones</strong> si detectamos errores</p>
+                            </div>
+                            <div class="service-step">
+                                <div class="service-icon"><i class="fas fa-paper-plane"></i></div>
+                                <p><strong>Solicitar</strong> certificados oficiales en tu nombre (con tu autorización expresa)</p>
+                            </div>
+                        </div>
+
+                        <div class="cta-box">
+                            <h4><i class="fas fa-check-circle"></i> La idea es simple</h4>
+                            <p>Que consigas la información que necesitas sin pelear con sedes electrónicas.</p>
+                            <a href="https://wa.me/34722198901" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+                            <span class="cta-separator">o</span>
+                            <a href="../../index.html#contacto" class="btn-formulario"><i class="fas fa-envelope"></i> Rellenar formulario</a>
+                        </div>
+                    </section>
+
+                    <!-- Sección: FAQ -->
+                    <section id="faq" class="content-section">
+                        <h2><i class="fas fa-question-circle"></i> FAQ: preguntas reales que se hace la gente</h2>
+
+                        <div class="faq-item">
+                            <h3>1) ¿Puedo ver mis datos del padrón por internet?</h3>
+                            <p>Sí, a través de la sede electrónica de tu ayuntamiento (si ofrece el servicio) o mediante la consulta del INE para ver la última inscripción.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>2) ¿Necesito certificado digital?</h3>
+                            <p>Normalmente sí. La mayoría de ayuntamientos exigen identificación digital: certificado digital, DNIe o Cl@ve.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>3) ¿Puedo ver los datos de toda mi familia?</h3>
+                            <p>Normalmente solo puedes ver tus propios datos por privacidad. Para datos de convivientes necesitarías un certificado colectivo.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>4) ¿La consulta online tiene validez oficial?</h3>
+                            <p>Si puedes descargar un volante o certificado con código de verificación, suele tener validez. Pero si te exigen documento con firma y sello oficial, puede que necesites el certificado formal.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>5) ¿Cuánto cuesta?</h3>
+                            <p>La consulta de datos suele ser gratuita. Los certificados pueden tener tasa según el ayuntamiento.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>6) ¿Lo puede hacer otra persona por mí?</h3>
+                            <p>Si no tienes acceso digital, puedes autorizar a alguien. En <strong>Administración Online</strong> actuamos como representantes para consultar y obtener documentos padronales por ti.</p>
+                            <div class="cta-box-small">
+                                <p>¿Necesitas que lo hagamos por ti?</p>
+                                <a href="https://wa.me/34722198901" target="_blank" class="btn-whatsapp-small"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA Final -->
+                    <section class="cta-final">
+                        <h2><i class="fas fa-headset"></i> ¿Te ayudamos con la consulta de tus datos padronales?</h2>
+                        <p>En <strong>Administración Online</strong> consultamos y obtenemos los documentos que necesitas. Solo tienes que autorizarnos y nosotros nos encargamos como tus representantes.</p>
+                        <div class="cta-buttons">
+                            <a href="https://wa.me/34722198901" target="_blank" class="btn-whatsapp-large"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+                            <a href="tel:+34722198901" class="btn-phone"><i class="fas fa-phone"></i> Llamar ahora</a>
+                            <a href="../../index.html#contacto" class="btn-form"><i class="fas fa-envelope"></i> Formulario de contacto</a>
+                        </div>
+                    </section>
+
+                </article>
+
+            </div>
+
+            <!-- Back Button -->
+            <div class="back-button-container">
+                <a href="../../administracion-local.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Volver a Administración Local
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="../../images/02_isotipo_AO.png" alt="Administración Online Isotipo" class="footer-logo-isotipo">
+                        <img src="../../images/03_logotipo_texto.png" alt="Administración Online" class="footer-logo-texto">
+                    </div>
+                    <p class="footer-desc">Trámites y gestiones con la administración a particulares y empresas.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Manantial 13, Planta 1, Oficina 163, Edificio CEEI - 11500 El Puerto de Santa María, Cádiz</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+34722198901">+34 722 198 901</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/34722198901" target="_blank">+34 722 198 901</a></li>
+                        <li><i class="fas fa-envelope"></i> info@administraciononline.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../politica-seguridad.html">Política de Seguridad</a></li>
+                        <li><a href="../../politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="../../terminos-condiciones.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 DOYR CAPITAL S.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Administración Online - Trámites y gestiones con la administración</title>
+    <meta name="description" content="Trámites y gestiones con la administración a particulares y empresas. Servicios profesionales de asesoramiento y gestión administrativa.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="#inicio">
+                            <img src="images/02_isotipo_AO.png" alt="Administración Online Isotipo" class="logo-isotipo">
+                            <img src="images/03_logotipo_texto.png" alt="Administración Online" class="logo-texto">
+                        </a>
+                    </div>
+
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li><a href="#inicio" class="nav-link active" data-i18n="nav.inicio">Inicio</a></li>
+                            <li><a href="#nosotros" class="nav-link" data-i18n="nav.nosotros">Nosotros</a></li>
+                            <li><a href="#servicios" class="nav-link" data-i18n="nav.servicios">Servicios</a></li>
+                            <li><a href="#logistica" class="nav-link" data-i18n="nav.administracion">La Administración</a></li>
+                            <li><a href="#como-trabajamos" class="nav-link" data-i18n="nav.comoTrabajamos">Cómo trabajamos</a></li>
+                            <li><a href="#contacto" class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <div class="search-box">
+                            <button class="search-btn" id="searchBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div class="search-form" id="searchForm">
+                                <input type="text" placeholder="Buscar..." class="search-input" data-i18n="search.placeholder" data-i18n-attr="placeholder">
+                                <button class="search-close" id="searchClose">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Language Selector -->
+                        <div class="language-selector">
+                            <button class="lang-btn" id="langBtn">
+                                <img src="images/flag-es.svg" alt="ES" class="lang-flag" id="currentLangFlag">
+                                <span id="currentLangText">ES</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="lang-dropdown" id="langDropdown">
+                                <a href="#" data-lang="es" class="lang-option active">
+                                    <img src="images/flag-es.svg" alt="Español"> Español
+                                </a>
+                                <a href="#" data-lang="en" class="lang-option">
+                                    <img src="images/flag-en.svg" alt="English"> English
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="mobile-toggle" id="mobileToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="inicio">
+        <div class="slider-wrapper">
+            <div class="slide active" style="background-image: url('images/SLIDE1.jpeg');">
+                <div class="slide-content">
+                    <div class="container">
+                        <h1 class="slide-title" data-i18n="hero.slide1Title">Realizamos tus trámites</h1>
+                        <p class="slide-text" data-i18n="hero.slide1Text">Presentamos y gestionamos los trámites por ti ante la administración</p>
+                        <a href="#servicios" class="btn-primary" data-i18n="hero.btnServicios">Ver Servicios</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/SLIDE2.jpeg');">
+                <div class="slide-content">
+                    <div class="container">
+                        <h1 class="slide-title" data-i18n="hero.slide2Title">Todo gestionado online</h1>
+                        <p class="slide-text" data-i18n="hero.slide2Text">Sin desplazamientos y pérdida de tiempo. Gestionamos todo en línea.</p>
+                        <a href="#servicios" class="btn-primary" data-i18n="hero.btnServicios">Ver Servicios</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/SLIDE3.png');">
+                <div class="slide-content">
+                    <div class="container">
+                        <h1 class="slide-title" data-i18n="hero.slide3Title">Administración local, autonómica y central</h1>
+                        <p class="slide-text" data-i18n="hero.slide3Text">Te ayudamos con tus gestiones con el Ayuntamiento, Catastro, Diputaciones, ...</p>
+                        <a href="#logistica" class="btn-primary" data-i18n="hero.btnAdministracion">La Administración</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/SLIDE4.jpeg');">
+                <div class="slide-content">
+                    <div class="container">
+                        <h1 class="slide-title" data-i18n="hero.slide4Title">Pago de tasas y tributos</h1>
+                        <p class="slide-text" data-i18n="hero.slide4Text">Pagamos las tasas y tributos que te soliciten por ti, todo online y sin desplazamientos.</p>
+                        <a href="#servicios" class="btn-primary" data-i18n="hero.btnServicios">Ver Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-arrow slider-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow slider-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="slider-bullets">
+                <span class="bullet active" data-slide="0"></span>
+                <span class="bullet" data-slide="1"></span>
+                <span class="bullet" data-slide="2"></span>
+                <span class="bullet" data-slide="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section class="nosotros-section" id="nosotros">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="nosotros.title">Nosotros</h2>
+                <p class="section-subtitle" data-i18n="nosotros.subtitle">Especialistas representando a particulares, profesionales y empresas en trámites y gestiones con la Administración</p>
+            </div>
+
+            <div class="nosotros-content">
+                <div class="nosotros-text">
+                    <h3 data-i18n="nosotros.quienesSomos">¿Quiénes somos?</h3>
+                    <p data-i18n="nosotros.texto1">Somos una empresa especializada en la gestión de trámites y procedimientos administrativos. Representamos a particulares, profesionales y empresas ante la Administración local, autonómica y central, ocupándonos de todas las gestiones necesarias para que nuestros clientes puedan centrarse en su actividad principal.</p>
+                    <p data-i18n="nosotros.texto2">Nuestro compromiso es ofrecer un servicio profesional, ágil y eficiente que permita a nuestros clientes ahorrar tiempo y recursos. Conocemos los procedimientos administrativos y trabajamos para que cada trámite se resuelva de forma correcta y en el menor plazo posible.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-number">83</div>
+                        <div class="stat-label" data-i18n="nosotros.stat1">Trámites disponibles</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-number">2</div>
+                        <div class="stat-label" data-i18n="nosotros.stat2">Oficinas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <div class="stat-number">+ 320</div>
+                        <div class="stat-label" data-i18n="nosotros.stat3">Documentos presentados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="stat-number">123</div>
+                        <div class="stat-label" data-i18n="nosotros.stat4">Clientes satisfechos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section class="servicios-section" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="servicios.title">Servicios</h2>
+                <p class="section-subtitle" data-i18n="servicios.subtitle">Soluciones a particulares, profesionales y empresas con los trámites de la Administración</p>
+            </div>
+
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="servicio-title" data-i18n="servicios.servicio1">Trámites y gestiones online</h3>
+                    <p class="servicio-desc"></p>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="servicio-title" data-i18n="servicios.servicio2">Pago de tasas e impuestos</h3>
+                    <p class="servicio-desc"></p>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="servicio-title" data-i18n="servicios.servicio3">Trámites y gestiones en persona</h3>
+                    <p class="servicio-desc"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logística Section -->
+    <section class="logistica-section" id="logistica">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="logistica.title">La Administración</h2>
+                <p class="section-subtitle" data-i18n="logistica.subtitle">Trámites, gestiones, tasas e impuestos que se realizan dependiendo del órgano competente.</p>
+            </div>
+
+            <div class="logistica-grid">
+                <div class="logistica-card">
+                    <div class="logistica-image" style="background-image: url('images/sector-energia.jpg');">
+                        <div class="logistica-overlay">
+                            <h3 data-i18n="logistica.local">Administración Local</h3>
+                            <p class="logistica-desc" data-i18n="logistica.localDesc">Trámites, gestiones y pagos con el Ayuntamiento y empresas locales</p>
+                            <a href="administracion-local.html" class="btn-outline btn-logo-color" data-i18n="logistica.btnVerMas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logistica-card">
+                    <div class="logistica-image" style="background-image: url('images/sector-alimentacion.jpg');">
+                        <div class="logistica-overlay">
+                            <h3 data-i18n="logistica.autonomica">Administración Autonómica</h3>
+                            <p class="logistica-desc" data-i18n="logistica.autonomicaDesc">Trámites, gestiones y pagos con Diputaciones, Órganos autonómicos y empresas provinciales.</p>
+                            <a href="administracion-autonomica.html" class="btn-outline btn-logo-color" data-i18n="logistica.btnVerMas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logistica-card">
+                    <div class="logistica-image" style="background-image: url('images/sector-moda.jpg');">
+                        <div class="logistica-overlay">
+                            <h3 data-i18n="logistica.central">Administración Central</h3>
+                            <p class="logistica-desc" data-i18n="logistica.centralDesc">Trámites, gestiones y pagos con Catastro y Organismos estatales</p>
+                            <a href="administracion-central.html" class="btn-outline btn-logo-color" data-i18n="logistica.btnVerMas">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo trabajamos Section -->
+    <section class="logistica-section" id="como-trabajamos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="comoTrabajamos.title">Cómo trabajamos</h2>
+                <p class="section-subtitle" data-i18n="comoTrabajamos.subtitle">Pasos que seguimos cuando realizamos un trámite o gestión a un cliente con la Administración local, autonómica o central</p>
+            </div>
+
+            <div class="logistica-grid">
+                <div class="logistica-card">
+                    <div class="logistica-overlay">
+                        <i class="fas fa-comments paso-icon"></i>
+                        <p class="paso-descripcion"><span class="paso-destacado" data-i18n="comoTrabajamos.paso1">1. Comunicación</span> <span data-i18n="comoTrabajamos.paso1Desc">con el cliente vía Teléfono, Whatsapp, Email o Formulario</span></p>
+                    </div>
+                </div>
+
+                <div class="logistica-card">
+                    <div class="logistica-overlay">
+                        <i class="fas fa-search paso-icon"></i>
+                        <p class="paso-descripcion"><span class="paso-destacado" data-i18n="comoTrabajamos.paso2">2. Análisis</span> <span data-i18n="comoTrabajamos.paso2Desc">de las necesidades del cliente y entrega de oferta</span></p>
+                    </div>
+                </div>
+
+                <div class="logistica-card">
+                    <div class="logistica-overlay">
+                        <i class="fas fa-credit-card paso-icon"></i>
+                        <p class="paso-descripcion"><span class="paso-destacado" data-i18n="comoTrabajamos.paso3">3. Pago</span> <span data-i18n="comoTrabajamos.paso3Desc">del servicio y solicitud de documentos</span></p>
+                    </div>
+                </div>
+
+                <div class="logistica-card">
+                    <div class="logistica-overlay">
+                        <i class="fas fa-file-signature paso-icon"></i>
+                        <p class="paso-descripcion"><span class="paso-destacado" data-i18n="comoTrabajamos.paso4">4. Entrega y firma</span> <span data-i18n="comoTrabajamos.paso4Desc">de documentos por parte del cliente</span></p>
+                    </div>
+                </div>
+
+                <div class="logistica-card">
+                    <div class="logistica-overlay">
+                        <i class="fas fa-paper-plane paso-icon"></i>
+                        <p class="paso-descripcion"><span class="paso-destacado" data-i18n="comoTrabajamos.paso5">5. Presentación</span> <span data-i18n="comoTrabajamos.paso5Desc">del trámite, documentos y seguimiento</span></p>
+                    </div>
+                </div>
+
+                <div class="logistica-card">
+                    <div class="logistica-overlay">
+                        <i class="fas fa-check-circle paso-icon"></i>
+                        <p class="paso-descripcion"><span class="paso-destacado" data-i18n="comoTrabajamos.paso6">6. Entrega</span> <span data-i18n="comoTrabajamos.paso6Desc">de documentación al cliente y cierre del expediente</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="contacto-section" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="contacto.title">Contacto</h2>
+                <p class="section-subtitle" data-i18n="contacto.subtitle">Estamos aquí para ayudarte</p>
+            </div>
+
+            <div class="contacto-wrapper">
+                <div class="contacto-form-wrapper">
+                    <form class="contacto-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre" data-i18n="contacto.nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-i18n="contacto.email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje" data-i18n="contacto.mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <label for="terminos" data-i18n="contacto.terminos">Acepto la política de privacidad y los términos de uso</label>
+                        </div>
+
+                        <button type="submit" class="btn-primary" data-i18n="contacto.btnEnviar">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <div class="contacto-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 data-i18n="contacto.telefono">Teléfono</h4>
+                        <p><a href="tel:+34722198901">+34 722 198 901</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4 data-i18n="contacto.whatsapp">WhatsApp</h4>
+                        <p><a href="https://wa.me/34722198901" target="_blank">+34 722 198 901</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>info@administraciononline.com</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 data-i18n="contacto.direccion">Dirección</h4>
+                        <p data-i18n="contacto.direccionTexto">Calle Manantial 13, Planta 1, Oficina 163<br>Edificio CEEI - 11500 El Puerto de Santa María<br>Cádiz, España</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 data-i18n="contacto.horario">Horario</h4>
+                        <p><span data-i18n="contacto.horarioTexto">Lunes a Viernes</span><br>09:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/02_isotipo_AO.png" alt="Administración Online Isotipo" class="footer-logo-isotipo">
+                        <img src="images/03_logotipo_texto.png" alt="Administración Online" class="footer-logo-texto">
+                    </div>
+                    <p class="footer-desc" data-i18n="footer.descripcion">Trámites y gestiones con la administración para particulares y empresas.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-i18n="footer.contacto">Contacto</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Manantial 13, Planta 1, Oficina 163, Edificio CEEI - 11500 El Puerto de Santa María, Cádiz</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+34722198901">+34 722 198 901</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/34722198901" target="_blank">+34 722 198 901</a></li>
+                        <li><i class="fas fa-envelope"></i> info@administraciononline.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-i18n="footer.legal">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="politica-seguridad.html" data-i18n="footer.politicaSeguridad">Política de Seguridad</a></li>
+                        <li><a href="politica-privacidad.html" data-i18n="footer.politicaPrivacidad">Política de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html" data-i18n="footer.terminosCondiciones">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-i18n="footer.siguenos">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 DOYR CAPITAL S.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

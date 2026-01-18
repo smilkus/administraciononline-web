@@ -383,7 +383,7 @@ window.addEventListener('scroll', () => {
 
 // Inicializar EmailJS con tu Public Key
 // IMPORTANTE: Reemplaza 'TU_PUBLIC_KEY' con tu clave pública de EmailJS
-emailjs.init('TU_PUBLIC_KEY');
+emailjs.init('25-MT-95OTIb5BMiD');
 
 const contactForm = document.getElementById('contactForm');
 
@@ -421,12 +421,12 @@ if (contactForm) {
             from_name: formData.nombre,
             from_email: formData.email,
             message: formData.mensaje,
-            to_email: 'gustavo.delolmo@gmail.com'
+            to_email: 'doyrcapital@gmail.com'
         };
 
         try {
             // IMPORTANTE: Reemplaza 'TU_SERVICE_ID' y 'TU_TEMPLATE_ID' con tus IDs de EmailJS
-            await emailjs.send('TU_SERVICE_ID', 'TU_TEMPLATE_ID', templateParams);
+            await emailjs.send('service_nij68rh', 'template_ieeghi9', templateParams);
 
             alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
             contactForm.reset();
